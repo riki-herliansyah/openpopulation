@@ -5,10 +5,8 @@ library(tidyverse)
 library(readxl)
 
 # import the data
-group_count <- read_excel("Bekantan.xlsx", sheet = "Sheet1")
-group_size <- read_excel("Bekantan.xlsx", sheet = "Sheet2")
-group_obs <- read_excel("Bekantan.xlsx", sheet = "Sheet3")
-ind_obs <- read_excel("Bekantan.xlsx", sheet = "Sheet5")
+group_count <- read_excel("dataset.xlsx", sheet = "group_count")
+group_size <- read_excel("dataset.xlsx", sheet = "group_size")
 
 # Build the model using rjags
 model_open <- "model{
